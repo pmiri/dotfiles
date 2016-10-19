@@ -5,6 +5,12 @@ set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent smartindent
+set showmode
+syntax on
+set ruler
+set cc=80
+highlight ColorColumn ctermbg=2
 colorscheme elflord
 inoremap jj <Esc>
 filetype off                  " required
