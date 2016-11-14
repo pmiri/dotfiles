@@ -11,7 +11,6 @@ syntax on
 set ruler
 set cc=80
 highlight ColorColumn ctermbg=2
-colorscheme elflord
 inoremap jj <Esc>
 filetype off                  " required
 
@@ -60,6 +59,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'haya14busa/incsearch-easymotion.vim'
 
+Plugin 'tomasr/molokai'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,13 +80,15 @@ filetype plugin indent on    " required
 
 " SOLARIZED
 " set background=dark
-" " config for proper displaying of colors in Screen
-" let g:solarized_termcolors=16
-" se t_Co=16
-" let g:solarized_visibility = "high"
-" let g:solarized_contrast = "high"
+"" " config for proper displaying of colors in Screen
+"let g:solarized_termcolors=256
+"se t_Co=256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
 " colorscheme solarized
-
+let g:molokai_original=1
+let g:rehash256=1
+colorscheme molokai
 " EASYMOTION
 " <Leader>f{char} to move to {char}
 map  <Leader>f <Plug>(easymotion-bd-f)
