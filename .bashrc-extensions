@@ -1,0 +1,10 @@
+TERM="screen-256color"
+export WORKON_HOME=~/Env
+source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
+PATH=$PATH:/usr/sbin:/sbin
+if shopt -q login_shell; then
+    fortune | cowsay
+fi
+alias ls='ls --color=always'
+alias tmux="TERM=screen-256color-bce tmux"

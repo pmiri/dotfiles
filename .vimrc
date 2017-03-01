@@ -1,7 +1,7 @@
 set nocompatible
 set magic
-set number
 set relativenumber
+set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -45,9 +45,9 @@ Plugin 'altercation/vim-colors-solarized'
 " usage: :FixWhitespace
 Plugin 'bronson/vim-trailing-whitespace'
 
-" TABULAR 
+" TABULAR
 " align stuff easily!
-" See the screen cast on gihub for quick tutorial. 
+" See the screen cast on gihub for quick tutorial.
 " See shortcut below
 Plugin 'godlygeek/tabular'
 
