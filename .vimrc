@@ -86,9 +86,10 @@ filetype plugin indent on    " required
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 " colorscheme solarized
-let g:molokai_original=1
-let g:rehash256=1
-colorscheme molokai
+"let g:molokai_original=1
+"let g:rehash256=1
+"colorscheme molokai
+colorscheme default
 " EASYMOTION
 " <Leader>f{char} to move to {char}
 map  <Leader>f <Plug>(easymotion-bd-f)
@@ -161,3 +162,4 @@ function! s:config_easyfuzzymotion(...) abort
 endfunction
 
 noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
+highlight Comment cterm=italic
