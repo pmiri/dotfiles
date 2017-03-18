@@ -10,7 +10,7 @@ PATH=$PATH:/usr/sbin:/sbin
 
 # Non-login shell stuff
 if shopt -q login_shell; then
-    fortune | cowsay
+    fortune | `ls /usr/games/cow* | shuf -n 1` -f `ls /usr/share/cowsay/cows/ | shuf -n 1`
 fi
 
 alias ls='ls --color=always'
