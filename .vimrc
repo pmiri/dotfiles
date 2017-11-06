@@ -7,6 +7,7 @@ set shiftwidth=4
 set expandtab
 set autoindent smartindent
 set showmode
+set backspace=indent,eol,start
 syntax on
 set ruler
 set cc=80
