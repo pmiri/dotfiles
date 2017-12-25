@@ -8,12 +8,15 @@
 TERM="xterm-256color"
 PATH=$PATH:/usr/sbin:/sbin
 
+# Colorize ls output
+alias ls='ls --color=auto'
+alias ll='ls -lah'
+alias l.='ls -d .* --color=auto'
+
 # Non-login shell stuff
 if shopt -q login_shell; then
     fortune | `ls /usr/games/cow* | shuf -n 1` -f `ls /usr/share/cowsay/cows/ | shuf -n 1`
 fi
-
-alias ls='ls --color=always'
 
 # For italics and 256 color in tmux/ssh
 { infocmp -1 xterm-256color ; echo -e "\tsitm=\\E[3m,\n\tritm=\\E[23m,"; } > $HOME/xterm-256color.terminfo
