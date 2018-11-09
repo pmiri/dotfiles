@@ -1,11 +1,10 @@
-
 # paste below into .bashrc include .bashrc if it exists
 # if [ -f $HOME/.bashrc-extensions ]; then
 #     . $HOME/.bashrc-extensions
 # fi
 # endpaste
 
-TERM="xterm-256color"
+# TERM="xterm-256color"
 PATH=$PATH:/usr/sbin:/sbin
 
 # Colorize ls output
@@ -15,9 +14,8 @@ alias l.='ls -d .* --color=auto'
 
 # Non-login shell stuff
 if shopt -q login_shell; then
-    fortune | `ls /usr/games/cow* | shuf -n 1` -f `ls /usr/share/cowsay/cows/ | shuf -n 1`
-fi
+	    fortune | `ls /usr/games/cow* | shuf -n 1` -f `ls /usr/share/cowsay/cows/ | shuf -n 1`
+    fi
 
-# For italics and 256 color in tmux/ssh
-{ infocmp -1 xterm-256color ; echo -e "\tsitm=\\E[3m,\n\tritm=\\E[23m,"; } > $HOME/xterm-256color.terminfo
-tic $HOME/xterm-256color.terminfo
+    # For italics and 256 color in tmux/ssh
+    { infocmp -1 xterm-256color ; echo -e "\tsitm=\\E[3m,\n\tritm=\\E[23m,"; } > $HOME/xterm-256color.terminfo

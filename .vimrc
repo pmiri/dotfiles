@@ -164,3 +164,6 @@ endfunction
 
 noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 highlight Comment cterm=italic
+
+
+
